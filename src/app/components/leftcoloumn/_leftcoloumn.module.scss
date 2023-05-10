@@ -1,0 +1,37 @@
+@import "../../styles/abstract/mixins";
+
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 0 20px;
+  a{
+    @include leftmenuFont;
+    padding-bottom: 20px;
+    &.active{
+      @include leftmenuFontActive;
+    }
+  }
+}
+
+
+.header{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.headerArrow{
+  width: 21px;
+  height: 13px;
+  background-size: 21px 13px;
+  background-image: url("arrow.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.headerText{
+  padding: 0 0 0 4px;
+  @include leftmenuFont;
+}

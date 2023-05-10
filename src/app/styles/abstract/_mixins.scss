@@ -1,0 +1,52 @@
+@import "variables";
+
+@mixin topmenuFont(){
+  font-family: "DIN Next W1G";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 120%;
+  text-decoration: none;
+}
+
+@mixin topmenuFontActive(){
+  @include topmenuFont;
+}
+
+@mixin leftmenuFont(){
+  font-family: 'DIN Next W1G';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 120%;
+  text-decoration: none;
+  color: $COLOR_GREY;
+}
+
+@mixin leftmenuFontActive(){
+  font-family: 'DIN Next W1G';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 120%;
+  text-decoration: none;
+  color: black;
+}
+
+@mixin footerFontHeader(){
+  font-family: 'DIN Next W1G';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 120%;
+}
+
+@mixin footerFontText(){
+  font-family: 'DIN Next W1G';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 120%;
+  text-decoration: none;
+  color: black;
+}

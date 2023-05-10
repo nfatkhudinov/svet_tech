@@ -1,0 +1,84 @@
+@import "../../styles/abstract/variables";
+@import "../../styles/abstract/mixins";
+.container{
+  background-color: #F8F8F8;
+  display: flex;
+  padding: 60px 20px 0 20px;
+  height: 100%;
+  flex-wrap: wrap;
+  @media (min-width: $BREAKPOINT_HUGE){
+    flex-direction: row;
+    max-height: 446px;
+  }
+  @media (min-width: $BREAKPOINT_MIDDLE) and (max-width: $BREAKPOINT_HUGE){
+    flex-direction: column;
+    max-height: 833px;
+  }
+  @media (max-width: $BREAKPOINT_MIDDLE){
+    flex-direction: column;
+    max-height: 1068px;
+  }
+}
+
+.coloumn{
+  display: flex;
+  flex-direction: column;
+  @media (min-width: $BREAKPOINT_HUGE){
+    width: 335px;
+  }
+  @media (min-width: $BREAKPOINT_MIDDLE) and (max-width: $BREAKPOINT_HUGE){
+    width: 356px;
+    padding-bottom: 40px;
+  }
+  @media (max-width: $BREAKPOINT_MIDDLE){
+    width: 347px;
+  }
+}
+
+.coloumn{
+  .header{
+    @include footerFontHeader;
+  }
+  a{
+    @include footerFontText;
+    padding-top: 28px;
+  }
+}
+
+
+.text{
+  @include footerFontText;
+}
+
+.buttons{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 32px 0;
+}
+
+@mixin button(){
+  height: 40px;
+  width: 40px;
+  background-position: center center;
+  background-size: 40px 40px;
+  background-repeat: no-repeat;
+  border: 0;
+}
+
+.buttonVk{
+  @include button;
+  background-image: url("vk.svg");
+}
+.buttonYoutube{
+  @include button;
+  background-image: url("youtube.svg");
+}
+.buttonTelegram{
+  @include button;
+  background-image: url("telegram.svg");
+}
+.buttonDzen{
+  @include button;
+  background-image: url("dzen.svg");
+}

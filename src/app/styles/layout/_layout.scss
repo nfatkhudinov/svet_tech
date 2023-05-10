@@ -1,0 +1,48 @@
+body{
+  display: flex;
+  justify-content: center;
+}
+
+.container{
+  display: grid;
+  padding: 0; //УБРАТЬ
+
+  grid-template-areas:
+    "header header"
+    "leftcoloumn content"
+    "footer footer";
+
+
+  @media (min-width: $BREAKPOINT_HUGE){
+    width: $BREAKPOINT_HUGE;
+    grid-template-rows: 80px 1fr 446px;
+  }
+  @media (min-width: $BREAKPOINT_MIDDLE) and (max-width: $BREAKPOINT_HUGE){
+    width: $BREAKPOINT_MIDDLE;
+    .leftcoloumn{display:none};
+    grid-template-rows: 56px 1fr 833px;
+  }
+  @media (max-width: $BREAKPOINT_MIDDLE){
+    width: $BREAKPOINT_SMALL;
+    .leftcoloumn{display:none};
+    grid-template-rows: 56px 1fr 1068px;
+  }
+}
+
+.header{
+  grid-area: header;
+}
+
+.leftcoloumn{
+  grid-area: leftcoloumn;
+  width: 257px;
+
+}
+
+.content{
+  grid-area: content;
+}
+
+.footer{
+  grid-area: footer;
+}

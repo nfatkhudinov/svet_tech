@@ -1,0 +1,22 @@
+@import "../../../styles/abstract/variables";
+
+.container{
+  background-image: url("button_search.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  cursor: pointer;
+
+  @media (min-width: $BREAKPOINT_HUGE){
+    width: 24px;
+    height: 24px;
+  }
+  @media (min-width: $BREAKPOINT_MIDDLE) and (max-width: $BREAKPOINT_HUGE){
+    width: 24px;
+    height: 24px;
+    margin-left: 28px;
+  }
+  @media (max-width: $BREAKPOINT_MIDDLE){
+    width: 24px;
+    height: 24px;
+  }
+}

@@ -1,0 +1,68 @@
+@import "../../styles/abstract/variables";
+
+//Изменение ширины HEADER в зависимости от ширины экрана
+.container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+
+  @media (min-width: $BREAKPOINT_HUGE){
+    height: 80px;
+    width: $BREAKPOINT_HUGE;
+    padding: 0 20px;
+  }
+  @media (min-width: $BREAKPOINT_MIDDLE) and (max-width: $BREAKPOINT_HUGE){
+    height: 56px;
+    width: $BREAKPOINT_MIDDLE;
+    padding: 0 20px;
+  }
+  @media (max-width: $BREAKPOINT_MIDDLE){
+    height: 56px;
+    width: $BREAKPOINT_SMALL;
+  }
+}
+
+//Изменение последовательности выводов компонентов HEADER в зависимости от ширины экрана
+
+@media (min-width: $BREAKPOINT_HUGE){
+  .logo{order: 0};
+  .topmenu{order: 1};
+  .buttonSearch{order: 2};
+  .buttonLike{order: 3};
+  .buttonLang{order: 4};
+  .buttonBurger{display: none};
+}
+@media (min-width: $BREAKPOINT_MIDDLE) and (max-width: $BREAKPOINT_HUGE){
+  .buttonSearch{order: 0};
+  .logo{order: 1};
+  .buttonLike{order: 2};
+  .buttonLang{order: 3};
+  .topmenu{display: none};
+}
+
+@media (max-width: $BREAKPOINT_MIDDLE){
+  .buttonSearch{order: 0};
+  .logo{order: 1};
+  .buttonLike{order: 2};
+  .buttonLang{order: 3};
+  .topmenu{display: none};
+}
+
+//Привязка кнопок к правой стороне
+//Выравнивание меню посередине
+@media (min-width: $BREAKPOINT_HUGE){
+   .buttonSearch{margin-left: auto};
+   .logo{margin-right: auto};
+}
+
+@media (min-width: $BREAKPOINT_MIDDLE) and (max-width: $BREAKPOINT_HUGE){
+  .buttonSearch{margin-right: auto};
+  .buttonLike{margin-left: auto};
+}
+
+@media (max-width: $BREAKPOINT_MIDDLE){
+  .container{
+    justify-content: space-between;
+  }
+}

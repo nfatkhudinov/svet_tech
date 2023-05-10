@@ -1,0 +1,25 @@
+@import "../../../styles/abstract/variables";
+
+.container{
+  background-image: url("button_lang.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  cursor: pointer;
+
+  @media (min-width: $BREAKPOINT_HUGE){
+    width: 30px;
+    height: 24px;
+    margin-left: 28px;
+  }
+  @media (min-width: $BREAKPOINT_MIDDLE) and (max-width: $BREAKPOINT_HUGE){
+    width: 30px;
+    height: 24px;
+    margin-left: 28px;
+  }
+  @media (max-width: $BREAKPOINT_MIDDLE){
+    width: 24px;
+    height: 19px;
+    background-size: 22px 12px;
+  }
+}
+

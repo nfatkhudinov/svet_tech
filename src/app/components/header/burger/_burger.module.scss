@@ -1,0 +1,35 @@
+@import "../../../styles/abstract/variables";
+
+.container {
+  @media (min-width: $BREAKPOINT_HUGE) {
+    display: none;
+  }
+  @media (min-width: $BREAKPOINT_MIDDLE) and (max-width: $BREAKPOINT_HUGE) {
+    display: block;
+    position: fixed;
+    top: 56px;
+    background-color: black;
+    opacity: 0.7;
+    color: white;
+    width: $BREAKPOINT_MIDDLE;
+    height: 100%;
+    animation: ani 0.2s forwards;
+  }
+
+  @media (max-width: $BREAKPOINT_MIDDLE) {
+    display: block;
+    position: fixed;
+    top: 56px;
+    background-color: black;
+    opacity: 0.7;
+    color: white;
+    width: $BREAKPOINT_SMALL;
+    height: 100%;
+    animation: ani 0.2s forwards;
+  }
+}
+
+@keyframes ani {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}

@@ -1,0 +1,17 @@
+@import "../../../styles/abstract/mixins";
+
+.container{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: center;
+
+  a{
+    color:black;
+    @include topmenuFont;
+    &.active{
+      @include topmenuFontActive;
+    }
+  }
+}
+

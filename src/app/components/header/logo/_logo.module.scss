@@ -1,0 +1,27 @@
+@import "../../../styles/abstract/variables";
+
+.container{
+  background-image: url("logo.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+
+  @media (min-width: $BREAKPOINT_HUGE){
+    width: 134px;
+    height: 38px;
+    background-size: 134px 34px;
+  }
+  @media (min-width: $BREAKPOINT_MIDDLE) and (max-width: $BREAKPOINT_HUGE){
+    width: 116px;
+    height: 32px;
+    background-size: 116px 29px;
+  }
+  @media (max-width: $BREAKPOINT_MIDDLE){
+    width: 24px;
+    height: 24px;
+    background-image: url("logo_small.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 24px 24px;
+  }
+}
