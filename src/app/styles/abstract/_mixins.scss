@@ -50,3 +50,27 @@
   text-decoration: none;
   color: black;
 }
+
+@mixin contentHeaderFontHeader{
+  font-family: 'DIN Next W1G';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 120%;
+}
+
+@mixin contentHeaderFontDownload{
+  font-family: 'DIN Next W1G';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 120%;
+}
+
+@mixin contentHeaderFontText{
+  font-family: 'DIN Next W1G';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 120%;
+}

@@ -1,0 +1,101 @@
+@import "../../styles/abstract/variables";
+@import "../../styles/abstract/mixins";
+
+.topheader{
+  @media (min-width: $BREAKPOINT_HUGE){display: none}
+}
+.header{
+  @media (min-width: $BREAKPOINT_MIDDLE) and (max-width: $BREAKPOINT_HUGE){display: none}
+  @media (max-width: $BREAKPOINT_MIDDLE){display: none}
+}
+
+.container{
+  display: flex;
+  gap: 20px;
+  @media (min-width: $BREAKPOINT_HUGE){flex-direction: row}
+  @media (min-width: $BREAKPOINT_MIDDLE) and (max-width: $BREAKPOINT_HUGE){flex-direction: column};
+  @media (max-width: $BREAKPOINT_MIDDLE){flex-direction: column}
+}
+
+.textcontainer{
+  background: #4A94CB;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $BREAKPOINT_HUGE){
+    width: 453px;
+    height: 446px;
+    order: 1;
+  }
+  @media (min-width: $BREAKPOINT_MIDDLE) and (max-width: $BREAKPOINT_HUGE){
+    width: 100%;
+    order: 2;
+  }
+  @media (max-width: $BREAKPOINT_MIDDLE){
+    width: 100%;
+    order: 2;
+  }
+}
+
+.photocontainer{
+  background-image: url("pic.png");
+  background-repeat: no-repeat;
+  @media (min-width: $BREAKPOINT_HUGE){
+    width: 710px;
+    background-size: 710px 446px;
+    order: 2;
+  }
+  @media (min-width: $BREAKPOINT_MIDDLE) and (max-width: $BREAKPOINT_HUGE){
+    width: 710px;
+    height: 482px;
+    background-size: 710px 482px;
+    order: 1;
+  }
+  @media (max-width: $BREAKPOINT_MIDDLE){
+    width: 375px;
+    height: 322px;
+    background-size: 375px 322px;
+    order: 1;
+  }
+}
+
+
+
+.topheader{
+  @include contentHeaderFontHeader;
+  font-size: 72px;
+}
+
+.header{
+  @include contentHeaderFontHeader;
+  color:white;
+
+}
+
+.downloadlink{
+  @include contentHeaderFontDownload;
+  color:white;
+  padding-top: 16px;
+  margin-bottom: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.downloadlinkbutton{
+  width:20px;
+  height: 20px;
+  background-image: url("booklet.svg");
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin-left: 6px;
+
+}
+
+.text{
+  @include contentHeaderFontText;
+  color: white;
+
+}

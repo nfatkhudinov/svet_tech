@@ -16,6 +16,7 @@ body{
   @media (min-width: $BREAKPOINT_HUGE){
     width: $BREAKPOINT_HUGE;
     grid-template-rows: 80px 1fr 446px;
+    grid-template-columns: 257px 1fr;
   }
   @media (min-width: $BREAKPOINT_MIDDLE) and (max-width: $BREAKPOINT_HUGE){
     width: $BREAKPOINT_MIDDLE;
