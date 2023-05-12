@@ -1,0 +1,15 @@
+@import "../../styles/abstract/mixins";
+
+.container{
+
+}
+
+h1{
+  @include contentH1Font;
+  padding-bottom: 32px;
+}
+
+p{
+  @include contentParagraphFont;
+  padding-bottom: 32px;
+}

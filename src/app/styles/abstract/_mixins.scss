@@ -74,3 +74,19 @@
   font-size: 20px;
   line-height: 120%;
 }
+
+@mixin contentH1Font{
+  font-family: 'DIN Next W1G';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 120%;
+}
+
+@mixin contentParagraphFont{
+  font-family: 'DIN Next W1G';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 120%;
+}

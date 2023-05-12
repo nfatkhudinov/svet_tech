@@ -1,0 +1,22 @@
+.bubble{
+  font-family: 'DIN Next W1G';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 120%;
+  text-decoration: none;
+  cursor: pointer;
+
+  color: white;
+  background-color: black;
+  border: 0;
+  height: 40px;
+  border-radius: 20px;
+  padding: 0 20px;
+  margin: 0 6px 0 0;
+}
+
+.active{
+  color: black;
+  background-color: white;
+}

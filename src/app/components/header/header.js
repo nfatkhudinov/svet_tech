@@ -12,7 +12,7 @@ import Burger from "@/app/components/header/burger/burger";
 
 const Header = () => {
 
-    let [burgerFlag, setBurgerFlag] = useState(false)
+    const [burgerFlag, setBurgerFlag] = useState(false)
 
     return (
         <>

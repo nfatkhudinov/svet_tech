@@ -1,0 +1,34 @@
+@import "../../styles/abstract/variables";
+
+.container{
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-image: url("https://s3-alpha-sig.figma.com/img/c5a3/4197/5600aabf8a999ba4e9a330eb85084f89?Expires=1684713600&Signature=SMFBpHSCyFV7myQwQ9~lDaV1frtJXPa3lbyUP9NZ86~wf2vOiZwijvYwYmcsFmMrwCt5OrhZvc~NlZUobP8R9K5PPL7M~PVKk0A71j2DbKTir5EV3Lc0hlmTkh795Nx~RLXmLKAXWo5KMYnzJHeFwsJ75eiYDcTV0ujqyNmzkj03HgQ7wZct3MPkB26-aXknuGu~Q1e9hqWwPJ3JxCroTEyKpWU8ClOXjvqqm2CvDkau6laVxkJxiFrPw2QR6oprpJLgGkdJVL95OcFoP5M8Ia~4SIlMA64vsmMD~mmHq7KOv-Kor9TDoHjRKqlryKxU0xn14X1U9597JUbzf8wIqw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4");
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  @media (min-width: $BREAKPOINT_HUGE){
+    width:100%;
+    height: 446px;
+    background-size: 100%;
+  }
+  @media (min-width: $BREAKPOINT_MIDDLE) and (max-width: $BREAKPOINT_HUGE){
+    width:768px;
+    height: 482px;
+  }
+  @media (max-width: $BREAKPOINT_MIDDLE){
+    width:375px;
+    height: 322px;
+  }
+}
+
+.header{
+  font-family: 'DIN Next W1G';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 72px;
+  line-height: 100%;
+  color: white;
+}
+
